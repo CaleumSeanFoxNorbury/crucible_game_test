@@ -1,0 +1,31 @@
+
+TASK 1
+
+We have given you a very basic PIXI setup which contains a simple index.html page and 2 JS files.
+The first file is main.js and this is the entry point and also where the PIXI App is created.
+The second file is game.js and this file creates 2 PIXI Containers and a simple button.
+
+Whenever the button is pressed, we want you to add several boxes at random positions on the screen.
+For the canvas dimensions, use the following: this.pixiApp.renderer.width and this.pixiApp.renderer.height
+As each box is created, add it's reference to an array.
+
+When the button is first pressed, ensure there are no boxes already on the screen by first checking the array.
+If the array is not empty, run through each entry and remove each instance from the boxContainer using boxContainer.removeChild( //instance goes here ), then destroy each instance using .destroy(). Finally, empty the array.
+
+So if it all works as planned, the first click will create and add boxes to the boxContainer (and array).
+The second click will remove all of the boxes that have been added and destroy them.
+The third click would start the process over from scratch....and so on.
+
+- BONUS - Add some styling, randomise the square's colour?
+
+
+*************************************************************************
+
+- NOTE -
+To run and test this project, you will need a local web server. 
+You can create your own, or use the 'live server' feature of vscode. 
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+Pixi docs - shouldn't be needed, but for reference
+https://pixijs.download/dev/docs/index.html
+
